@@ -1,0 +1,104 @@
+main{
+    display:block;
+    background-color: #b8c6cc ;
+}
+body{
+    background-color: #b8c6cc;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    text-align:center;
+    color: #fcfcfc;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align:center;
+    color: #fcfcfc;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align:center;
+    color: #fcfcfc;
+}
+p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align:center;
+    color: #fcfcfc;
+}
+
+a{
+    display:grid;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align:center;
+    color: #85a6b2f1;
+a:hover{
+    color: rgb(156, 139, 233);
+}
+alt:hover{
+    color: rgb(73, 70, 64);
+}
+.scenerios{
+    display:grid;
+    grid-template-columns: 2fr 1 fr auto;
+    width: 75%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #645c5a;
+    color: #fcfcfc#333;
+}
+.colors{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 75%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #645c5a;
+    color: #333;
+}
+
+.typography{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 75%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #645c5a;
+    color: #fcfcfc;
+}
+
+.wireframes{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 75%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #645c5a;
+    color: #fcfcfc;
+}
+footer{
+    display:grid;
+    grid-template-columns: auto;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #fcfcfc;
+}
