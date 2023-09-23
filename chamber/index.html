@@ -9,10 +9,10 @@
     <meta property="og:url" content="https://ereksonbrenda.github.io/wdd230" />
     <meta property="og:image" content="https://www.gjcity.org/ImageRepository/Document?documentID=96" />
     <title>Grand Junction Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="scripts" href="scripts/chamber.js">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/chamber.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -21,25 +21,129 @@
 </head>
 <body>
     <header>
-        <h1>Grand Junction Chamber of Commerce</h1>
-        <img src="images/hero.jpeg" alt="Grand Junction Downtown area">
-        <button type="button">Join Now!</button>
+        <h1 class="title">Grand Junction Chamber of Commerce</h1>
+            <img class="hero" src="images/hero.jpeg" alt="Grand Junction Downtown area">
+        <div class="join">
+            <button class="button" type="button">Join Now!</button>
+        </div>
     </header>
     <nav>
         <ul>
             <li class="active">
-                <a href="">Home</a>
+                <a href="../index.html">Home</a>
             </li>
             <li>
-                <a href="chamber-site-plan.html">Site Plan</a>
+                <a href="#">Current Events</a>
+            </li>
+            <li>
+                <a href="#">Weather</a>
+            </li>
+            <li>
+                <a href="#">Spotlights</a>
+            </li>
+            <li>
+                <a href="../week01/chamber-site-plan.html">Site Plan</a>
             </li>
         </ul>
     </nav>
+        <h2>Current Events</h2>
+
+    <section class="events">
+        <div class="card">
+            <img src="images/mountainbiking.jpeg" alt="Outdoor Activities" style="width:100%">
+            <div class="container">
+              <h4><b>Mountian Biking</b></h4>
+              <p>Most of the year</p>
+              <p>More info here/Events/Fat Tire Festival</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/mountainbiking.jpeg" alt="Outdoor Activities" style="width:100%">
+            <div class="container">
+              <h4><b>Mountian Biking</b></h4>
+              <p>Most of the year</p>
+              <p>More info here/Events/Fat Tire Festival</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/mountainbiking.jpeg" alt="Outdoor Activities" style="width:100%">
+            <div class="container">
+              <h4><b>Mountian Biking</b></h4>
+              <p>Most of the year</p>
+              <p>More info here/Events/Fat Tire Festival</p>
+            </div>
+        </div>
+    </section>
+
+         <h2>Weather</h2>   
+
+    <section class="weather">
+       <div class="card">
+            <img src="images/weather.jpeg" alt="Weather in Grand Junction" style="width:100%">
+        
+            <div class="container">
+                <h4>Current Weather in Grand Junction</h4>
+                <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/weather.jpeg" alt="Weather in Grand Junction" style="width:100%">
+        
+            <div class="container">
+                <h4>Current Weather in Grand Junction</h4>
+                <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/weather.jpeg" alt="Weather in Grand Junction" style="width:100%">
+        
+            <div class="container">
+                <h4>Current Weather in Grand Junction</h4>
+                <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
+            </div>
+        </div>
+       
+    </section>
+
+        <h2>Spotlights</h2>
+
+    <section class="spotlight">
+        <div class="card">
+            <img src="images/mustangs.jpeg" alt="mustangs" style="width:100%">
+            <div class="container">
+              <h4><b>Friends of the Mustangs</b></h4>
+              <p>A group of citizens that take care of the wild horse population.</p>
+            </div>
+          </div>
+        <div class="card">
+            <img src="images/peaches.jpeg" alt="peaches" style="width:100%">
+            <div class="container">
+                <h4><b>Peaches</b></h4>
+                <p>More info here/Local Business/Peaches</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/grandjct-temple.jpg" alt="temple" style="width:100%">
+            <div class="container">
+                <h4><b>Grand Junction Temple</b></h4>
+                <p>More info here/Local Business/temple</p>
+            </div>
+        </div>
+    </section>
     
 </body>
 
 <footer>
-    <p>&copy; 2021 Brenda Erekson | wdd230 | </p>
+    <p>&copy; 2023 Brenda Erekson | wdd230 | </p>
     <p>This document was last modified:</p>
     <p id="date"></p>
 
