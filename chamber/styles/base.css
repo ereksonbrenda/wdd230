@@ -27,7 +27,7 @@ header{
     flex-grow: 1;
     flex-basis: 0;
     padding: 10px;
-    color: white;
+    color: ivory;
     text-decoration: none;
     text-align: center;
   }
@@ -40,6 +40,7 @@ header{
   @media screen and (max-width: 768px){
     /* (A) BREAK INTO VERTICAL MENU */
     #hamitems a {
+      color:ivory;
       box-sizing: border-box;
       display: block;
       width: 100%;
@@ -50,7 +51,7 @@ header{
     #hamnav label {
       display: inline-block;
       cursor: pointer;
-      color: white;
+      color: ivory;
       background: #333;
       font-style: normal;
       font-size: 1.2em;
