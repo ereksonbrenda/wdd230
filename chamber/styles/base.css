@@ -1,14 +1,69 @@
+*{
+    padding:0;
+    margin:0;
+}
+
 html{
     font-size: 100%;
     box-sizing: border-box;
 }
-*, *:before, *:after{
-    box-sizing: inherit;
+
+header{
+    position: relative;
+    top: 0;
+    width:100%;
+    background-color:#333;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
+/* [ON BIG SCREENS] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: #000;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { background: dodgerblue; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label {
+      display: inline-block;
+      cursor: pointer;
+      color: white;
+      background: #333;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+  
+
 .hero{
     position: relative;
     height: 100vh;
@@ -143,34 +198,7 @@ p{
     margin:3em;
   }
 
-nav{
-    text-align: center;
-    margin-bottom: 1em;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(6, 6, 6);
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: rgb(39, 2, 2);
-  }
+
 body{
     font-family: sans-serif;
     font-size: 1em;
