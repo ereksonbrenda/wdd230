@@ -39,7 +39,43 @@ p{
 main{
     display:block;
     background-color: ivory;
+    max-width:670px;
+    margin: 0 auto;
 }
+.hero{
+    margin: 10px auto;
+    padding:5px;
+    position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Tangerine", serif;
+}
+
+
 .card{
     display:flex;
     flex-direction: column;
@@ -91,6 +127,16 @@ main{
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
+}
+.map{
+    display:grid;
+    grid-template-columns: 1/span 2;
+    margin:20px auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(50, 156, 248, 0.4);
+    color: ivory;
+
 }
 #hamnav {
     width: 100%;
@@ -145,6 +191,16 @@ main{
     #hamitems { display: none; }
     #hamnav input:checked ~ #hamitems { display: block; }
   }
+  .visitor{
+    display: grid;  
+    grid-template-columns: 1/span 2;
+    margin:20px auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(50, 156, 248, 0.4);
+    color: ivory;
+}
+
 
 footer{
     display: flex;
