@@ -9,21 +9,21 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
-    color: rgb(243, 218, 247);
+    color: rgb(248, 218, 218);
 }
 h1 {
     font-size: 2rem;
     font-weight: 600;
     line-height: 3rem;
     text-align:center;
-    color: #333;
+    color: rgb(11, 0, 0);
 }
 h2,h3,h4,h5,h6{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
     text-align:center;
-    color: #333;
+    color: rgb(11, 0, 0);
 }
 h2{
     padding:1rem;
@@ -34,12 +34,48 @@ p{
     font-weight: 600;
     line-height: 1.5rem;
     text-align:center;
-    color: #333;
+    color:rgb(1, 30, 34);
 }
 main{
     display:block;
     background-color: ivory;
+    max-width:670px;
+    margin: 0 auto;
 }
+.hero{
+    margin: 10px auto;
+    padding:5px;
+    position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Tangerine", serif;
+}
+
+
 .card{
     display:flex;
     flex-direction: column;
@@ -50,8 +86,8 @@ main{
     margin: 0 auto;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: rgb(0, 0, 0, 0.4);
-    color: #333;
+    background-color: rgb(50, 156, 248, 0.4);
+    color: black;
 }
 .profileimg{
     display: block;
@@ -60,17 +96,17 @@ main{
     width: 20%;
     height: 20%;
     border-radius: 50%;
-    border: 1px solid #333;
+    border: 1px solid darkslategray;
 }
 .card p{
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5rem;
     text-align:center;
-    color: #333;
+    color: ivory;
 }   
 .firstsection{
-    color: #333;
+    color: rgb(5, 6, 0);
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -83,47 +119,95 @@ main{
     align-items: center;
     list-style: none;
     text-decoration: none;
-    color:black
+    color:rgb(5, 6, 0);
 }
 .secondsection{
-    color: #333;
+    color: rgb(5, 6, 0);
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
 }
-
-nav {
-    background-color:rgb(213, 246, 246);
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-nav a {
-    display: block;
+.map{
+    display:grid;
+    grid-template-columns: 1/span 2;
+    margin:20px auto;
     padding: 1rem;
-    color: #333;
+    border-radius: 1rem;
+    background-color: rgb(50, 156, 248, 0.4);
+    color: ivory;
+
+}
+#hamnav {
+    width: 100%;
+    background-color:rgb(50, 156, 248, 0.4);
+}
+  
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { 
+    display: flex;
+ }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: black;
     text-decoration: none;
     text-align: center;
+  }
+  #hamitems a:hover { 
+    background: dodgerblue;
+ }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { 
+    display: none; 
+}
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label {
+      display: inline-block;
+      cursor: pointer;
+      color: white;
+      background: #333;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+  .visitor{
+    display: grid;  
+    grid-template-columns: 1/span 2;
+    margin:20px auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(50, 156, 248, 0.4);
+    color: ivory;
 }
 
-nav a:hover {
-background-color: aliceblue;
-}
 
-nav .active {
-    background-color: rgb(0, 0, 0, 0.4);
-   
-}
 footer{
     display: flex;
     justify-content: center;
-    background-color: rgb(213, 246, 246);
-    color: #333;
+    background-color: rgb(50, 156, 248, 0.4);
+    color: ivory;
+    
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 1rem;

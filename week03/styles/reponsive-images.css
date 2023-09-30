@@ -1,0 +1,13 @@
+.hero picture{
+    width:100%;
+}
+.hero img{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

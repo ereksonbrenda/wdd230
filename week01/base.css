@@ -1,37 +1,37 @@
 main{
     display:block;
-    background-color: #b8c6cc ;
+    background-color: #f4f999 ;
 }
 body{
-    background-color: #b8c6cc;
+    background-color: #f6f7f9;
 }
 h1{
     font-size: 2rem;
     font-weight: 600;
     line-height: 3rem;
     text-align:center;
-    color: #fcfcfc;
+    color: #011d28;
 }
 h2{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
     text-align:center;
-    color: #fcfcfc;
+    color: #011d28;
 }
 h3{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
     text-align:center;
-    color: #fcfcfc;
+    color: #011d28;
 }
 p{
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5rem;
     text-align:center;
-    color: #fcfcfc;
+    color: #011d28;
 }
 
 a{
@@ -58,7 +58,7 @@ alt:hover{
     margin: 0 auto;
     padding: 1rem;
     background-color: #645c5a;
-    color: #fcfcfc#333;
+    color: #011d28#333;
 }
 .colors{
     display:grid;
@@ -79,7 +79,7 @@ alt:hover{
     margin: 0 auto;
     padding: 1rem;
     background-color: #645c5a;
-    color: #fcfcfc;
+    color: #011d28;
 }
 
 .wireframes{
@@ -90,7 +90,7 @@ alt:hover{
     margin: 0 auto;
     padding: 1rem;
     background-color: #645c5a;
-    color: #fcfcfc;
+    color: #011d28;
 }
 footer{
     display:grid;
@@ -100,5 +100,5 @@ footer{
     margin: 0 auto;
     padding: 1rem;
     border-radius: 1rem;
-    color: #fcfcfc;
+    color: #011d28;
 }
