@@ -58,8 +58,8 @@ main{
 
 .herolabel {
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 30px;
+	left: 30px;
 	background: radial-gradient(#fff, #4D5B97);
 	border: 1px solid rgba(0,0,0,.75);
 	padding: 1.5rem;

@@ -42,13 +42,13 @@
     </header>
         
     <main>
-        <div>
-            <picture class="hero">
+        <div class="hero">
+            <picture>
                 <source media="(max-width: 960px)" srcset="images/hero-large.webp">
                 <source media="(max-width: 400px)" srcset="images/hero-small.webp">
                 <img src="week03/images/hero-large.webp" alt="hero image" width="960px">
             </picture>
-            <div class="herolable">
+            <div class="herolabel">
                 <p>Jordan River Temple</p>
              </div>
          </div>
@@ -95,10 +95,9 @@
             <h3>Visit Counter</h3>
             <p><span id="label">Number of Visits:</span>
             <span class="visits"></span></p>
-
         </section>
         <footer>
-            <p>&copy; 2021 Brenda Erekson-Colorado</p>
+            <p>&copy; 2023 Brenda Erekson-Colorado</p>
             <p id="lastmodified">Last Updated: 
                 <?php echo date("F d, Y", getlastmod()); ? ></p>
                 <a href="scripts/getDates.js">
