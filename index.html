@@ -97,13 +97,14 @@
             <span class="visits"></span></p>
         </section>
         <footer>
-            <p>&copy; 2023 Brenda Erekson-Colorado</p>
-            <p id="lastmodified">Last Updated: 
+            <p>&copy; 2023 Brenda Erekson-Colorado </p>
+            <p id="lastmodified"> 
                 <?php echo date("F d, Y", getlastmod()); ? ></p>
                 <a href="scripts/getDates.js">
+                <script>
+                        document.write(" | This document is last modified on:" + " " + document.lastModified);
+                </script>           
         </footer>
-        <script>
-            document.write("This document is lastly modified on" + " " +document.lastModified);
-         </script>
+        
 </body>
 </html>
