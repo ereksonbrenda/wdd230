@@ -1,3 +1,7 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
 *{
     padding:0;
     margin:0;
@@ -62,6 +66,13 @@ header{
     /* (C) TOGGLE SHOW/HIDE MENU */
     #hamitems { display: none; }
     #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+  @media screen and (max-width:768px){
+    .card:hover{
+        box-shadow:none;
+    }
+    
   }
   
 
@@ -190,14 +201,75 @@ p{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  img {
-    border-radius: 5px 5px 0 0;
+img {
+    border-radius: 5px 5px 0 0; 
+    animation: fadeIn 3s;
+    width:100%;
   }
-  
-  .container {
+img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+.container {
     padding: 2px 16px;
     margin:3em;
   }
+sidebar{
+    display:grid;
+}
+.website-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ff4957;
+    height: 50px;
+    width: 80px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+#reset {
+    margin-top: 20px;
+    background-color: #008cba;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 20px;
+    color: white;
+    border: 0;
+  }
+.crazy{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.crazy main{
+    padding:10px;
+
+}
+section{
+    border:3px solid orangered;
+    padding:10px;
+    margin:10px;
+   
+}
+
+figcaption{
+    font-size:1em;
+    background: #000;
+    color: #fff;
+    width:100%;
+
+}
+.img-box{
+    position: relative;
+   
+
+}
+.img-box figcaption{
+    position: absolute;
+    bottom: 5px;
+}
 
 
 body{

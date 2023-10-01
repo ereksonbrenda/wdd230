@@ -14,17 +14,19 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="scripts/chamber.js"></script>
+
    
 
 </head>
 <body>
     <header>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-        <img class="profileimg" src="images/profileimg.webp" alt="Brenda Erekson" width="100" height="100">
-        <scripts src="scripts/localstorage.js"></scripts>
+         <img class="profileimg" src="images/profileimg.webp" alt="Brenda Erekson" width="100" height="100">
+       
         <h1>Brenda Erekson</h1>
         <nav id="hamnav">
             <label for="hamburger">&#9776;</label>
@@ -40,8 +42,69 @@
         
         </nav>
     </header>
+    <div class="crazy">
+    <sidebar>
+        <section>
+            <div>Website visit count: <span class="visit-count"></span></div>
+            <div class="website-counter">
+                <button id="reset">Reset</button>
+            </div> 
+        </section> 
+
+        <section>
+            <div>
+                <h3>Heading Here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas alias quisquam ea, fugiat atque minima laboriosam aut harum culpa, veritatis, voluptas facere blanditiis porro cupiditate. Odit vel repellendus accusamus autem!</p>
+            </div>
+        </section>
+        
+        <section>
+            <div>
+                <h3>Heading Here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas alias quisquam ea, fugiat atque minima laboriosam aut harum culpa, veritatis, voluptas facere blanditiis porro cupiditate. Odit vel repellendus accusamus autem!</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Heading Here</h3>
+            <picture>
+                <img src="/chamber/images/peaches.jpeg" alt="peaches" loading="lazy" width="400" height="600">
+            </picture>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ducimus, praesentium sed ad laboriosam autem atque, facilis eos accusantium ea tempore esse alias tempora explicabo minus minima nulla enim porro?</p>
+            </div>
+        </section>
+
+    </sidebar>
         
     <main>
+        <div class="img-box">
+        <img src="/chamber/images/hero.jpeg" alt="downtown" loading="lazy">
+        <figcaption>Downtown Grand Junction, Colorado</figcaption>
+        </div>
+        <div class="img-box">
+        <img src="/chamber/images/grandjct-temple.jpg" alt="grandjct-temple" loading="lazy">
+        <figcaption>The new temple going up and coming soon!</figcaption>
+        </div>
+        <div class="img-box">
+        <img src="/chamber/images/mountainbiking.jpeg" alt="mountainbiking" loading="lazy">
+        <figcaption>World class mountainbiking.</figcaption>
+        </div>
+        <div class="img-box">
+        <img src="/chamber/images/mustangs.jpeg" alt="mustangs" loading="lazy">
+        <figcaption>Wild horses are free and roaming.</figcaption>
+        </div>
+        <div class="img-box">
+        <img src="/chamber/images/peaches.jpeg" alt="peaches" loading="lazy">
+        <figcaption>Peaches are the best here in Colorado.</figcaption>
+        </div>
+        <div class="img-box">
+        <img src="/chamber/images/weather.jpeg" alt="weather" loading="lazy">
+        <figcaption>Wait five minutes and the weather will change.</figcaption>
+        </div>
+    
+         </main> 
+   </div>
        
         <footer>
             <p>&copy; 2023 Brenda Erekson-Colorado </p>
@@ -52,6 +115,6 @@
                         document.write(" | This document is last modified on:" + " " + document.lastModified);
                 </script>           
         </footer>
-    </main>
+    
 </body>
 </html>
