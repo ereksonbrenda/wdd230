@@ -6,21 +6,23 @@
     
   }
   caption {
-    padding: 10px;
     caption-side: bottom;
-      color:grey;
-      font-size: .8rem;
+    color:grey;
     font-family: 'IBM Plex Serif', serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    font-size: .8rem;
+    padding: 10px;
   }
+
   .black{
     background-color:black;
     color:white;
-    padding: 10px;
-    font-size: 1.2rem;
     font-family: 'IBM Plex Serif', serif;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
   }
+
   tr:nth-child(even) {
     background-color: var(--even);
     color: var(--eventext); 
@@ -33,9 +35,10 @@
   table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding:5px;
     text-align: center;
+    padding:5px;
   }
+  
   td{
     font-family:sans-serif;
     font-family: 'IBM Plex Serif', serif;
