@@ -1,0 +1,53 @@
+:root{
+    --even:lightblue;
+    --odd:lightyellow;
+    --eventext:black;
+    --oddtext:white;
+    
+  }
+  caption {
+    padding: 10px;
+    caption-side: bottom;
+      color:grey;
+      font-size: .8rem;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  .black{
+    background-color:black;
+    color:white;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  tr:nth-child(even) {
+    background-color: var(--even);
+    color: var(--eventext); 
+    font-family:serif;
+  }
+  tr:nth-child(odd) {
+    background-color: var(--odd);
+    color: var(--eventext);
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:5px;
+    text-align: center;
+  }
+  td{
+    font-family:sans-serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  span{
+    color:blue;
+  }
+  
+  
+  
+  
+  
+  
+  
