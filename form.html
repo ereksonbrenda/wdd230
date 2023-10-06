@@ -1,0 +1,100 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Brenda Erekson wdd230" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ereksonbrenda.github.io/wdd230" />
+    <meta property="og:image" content="https://www.gjcity.org/ImageRepository/Document?documentID=96" />
+    <title>Brenda Erekson - wdd230 - Web Frontend Development</title>
+    <meta name="author" content="Brenda Erekson's WDD230 - Web Frontend Development class/course assignment portal">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+   
+
+</head>
+<body>
+    <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <img class="profileimg" src="images/profileimg.webp" alt="Brenda Erekson" width="100" height="100">
+        <scripts src="scripts/localstorage.js"></scripts>
+        <h1>Brenda Erekson</h1>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+ 
+  <!-- (C) MENU ITEMS -->
+         <div id="hamitems">
+            <a href="../index.html">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="./week01/chamber-site-plan.html">chamber-site-plan</a>
+            <a href="#">Forth</a>
+         </div>
+        
+        </nav>
+    </header>
+    
+    <main>
+        <form>
+            <fieldset id="form">
+                <legend>Username</legend>
+                    <label class="user">Name* 
+                        <input type="text" id="username" name="name" required>
+                    </label>
+                    <label class="user">Password*
+                        <input type="password" id="password" name="password" pattern="[A-Za-z]{8}" placeholder="must be 8 characters long" required>
+                    </label>
+                    <label class="user">Re-type Password*> 
+                        <input type="password2" id="password2" name="password2">
+                    </label>
+                    <label class="user">Email Address
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="Please use your school email address">
+                    </label>    
+            </fieldset>
+            <fieldset>
+                <ledgend>Page Rating</ledgend>
+               
+                    <div class="star-rating">
+                        <input type="radio" name="stars" id="star-a" value="5"/>
+                        <label for="star-a"></label>
+                  
+                        <input type="radio" name="stars" id="star-b" value="4"/>
+                        <label for="star-b"></label>
+                    
+                        <input type="radio" name="stars" id="star-c" value="3"/>
+                        <label for="star-c"></label>
+                    
+                        <input type="radio" name="stars" id="star-d" value="2"/>
+                        <label for="star-d"></label>
+                    
+                        <input type="radio" name="stars" id="star-e" value="1"/>
+                        <label for="star-e"></label>
+                  </div>
+                  
+               
+            </fieldset>
+        </form>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Brenda Erekson-Colorado </p>
+        <p id="lastmodified"> 
+            <?php echo date("F d, Y", getlastmod()); ? ></p>
+            <a href="scripts/getDates.js">
+            <script>
+                    document.write(" | This document is last modified on:" + " " + document.lastModified);
+            </script>           
+    </footer>
+ </body>
+ </html>
+
+
