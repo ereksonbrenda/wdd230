@@ -8,41 +8,27 @@
 h1{
     color:var(--user);
 }  
+.top{
+    color:black;
+    margin:0 1rem;
+    padding:0 .5rem;
+}
 
-form fieldset{
+.form {
     margin: 2rem 0;
     border: 1px solid blue; 
     border-radius: 10px;
     padding: .5rem 2%;
 }
 
-form legend {
-    margin: 0 1rem;
-    padding:0 .5rem;
-    color: blue;
-}
 
-form label.user, form div{
-    display: block;
-    margin: 1rem 0;
-    padding-top: 0 .5rem;
-    color:var(--required);
-    font-size: .8rem;
-}
-
-form label.user input, form label.user select{
-    -webkit-appearance: none;
-    appearance: none;
+.user{
     display:block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem 0;
-    color:#555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(0,0,0,.1);
+    color:black;
+    padding:5px;
+
 }
+
 
 form input.submitBtn{
     border: none;
