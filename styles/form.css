@@ -22,11 +22,26 @@ h1{
 }
 
 
-.user{
+form label.user{
     display:block;
     color:black;
     padding:5px;
+    border: solid 4px black;
+    border-radius:4px;
+    padding-top: 0 .5rem;
+    font-size: .8rem;
+    color:#555;
+    width: 100%;
+    max-width: 20rem;
 
+}
+.bottom{
+    display:block;
+    color:black;
+    background-color:var(--background-color);
+    border: solid 4px black;
+    border-radius: 4px;
+    padding-top: 0 .5rem;
 }
 
 
