@@ -35,63 +35,29 @@
             <a href="../index.html">Home</a>
             <a href="chamber/index.html">Chamber</a>
             <a href="./week01/chamber-site-plan.html">chamber-site-plan</a>
-            <a href="#">Forth</a>
+            <a href="../wdd230/form.html">Form</a>
          </div>
         
         </nav>
     </header>
-    
-    <main>
-        <form method="get" action="record.html">
-            <fieldset id="form">
-                <legend>Username</legend>
-                    <label class="user">Name* 
-                        <input type="text" id="username" name="name" required>
-                    </label>
-                    <label class="user">Password*
-                        <input type="password" id="password" name="password" pattern="[A-Za-z]{8}" placeholder="must be 8 characters long" required>
-                    </label>
-                    <label class="user">Re-type Password*> 
-                        <input type="password2" id="password2" name="password2">
-                    </label>
-                    <label class="user">Email Address
-                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="Please use your school email address">
-                    </label>    
-            </fieldset>
-            <fieldset>
-                <ledgend>Page Rating</ledgend>
-                <div id="rangevalue">0</div>
-                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
-                <datalist id="rangevalues">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
-            </fieldset>
-            <input type="submit" value="Finish Here" class="submitBtn">
-        </form>
+    <body>
+        <main>
+            <h1>Form Application</h1>
+            <p>Thank you for filling out the information. We have submitted it. </p>
 
 
 
-    </main>
-    <footer>
-        <p>&copy; 2023 Brenda Erekson-Colorado </p>
+
+
+        </main>
+        <footer>
+            <p>&copy; 2023 Brenda Erekson-Colorado </p>
         <p id="lastmodified"> 
             <?php echo date("F d, Y", getlastmod()); ? ></p>
             <a href="scripts/getDates.js">
             <script>
                     document.write(" | This document is last modified on:" + " " + document.lastModified);
             </script>           
-    </footer>
- </body>
- </html>
-
-
+        </footer>
+    </body>
+    
