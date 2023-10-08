@@ -1,0 +1,125 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Brenda Erekson wdd230" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ereksonbrenda.github.io/wdd230" />
+    <meta property="og:image" content="https://www.gjcity.org/ImageRepository/Document?documentID=96" />
+    <title>Brenda Erekson - wdd230 - Web Frontend Development</title>
+    <meta name="author" content="Brenda Erekson's WDD230 - Web Frontend Development class/course assignment portal">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+   
+
+</head>
+<body>
+    <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <img class="profileimg" src="images/profileimg.webp" alt="Brenda Erekson" width="100" height="100">
+        <scripts src="scripts/localstorage.js"></scripts>
+        <h1>Brenda Erekson</h1>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+ 
+  <!-- (C) MENU ITEMS -->
+         <div id="hamitems">
+            <a href="../index.html">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="./week01/chamber-site-plan.html">chamber-site-plan</a>
+            <a href="form.html">Form</a>
+         </div>
+        
+        </nav>
+    </header>
+    <body>
+        <main>
+
+            <h1>Thank you for your interest in joining the chamber. Enter all your information below and you will be all ready to go.</h1> 
+            
+            <form method="get" action="thankyou.html">
+        
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Your Position<input type="text" name="positon" pattern="" required></label>
+                    <label class="top">Email* <input type="email" name="email" required></label>
+                    <label class="top">Phone Number<input type="tel" name="phone" required></label>
+                    <label class="top">Business Name <input type="text" name="business" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <div>Membership Levels</div>
+                    <label class="mid"><input type="radio" name="membership" value="np">Non-profit no fees</label>
+                    <label class="mid" ><input type="radio" name="membership" value="bronze">Bronze</label>
+                    <label class="mid"><input type="radio" name="membership" value="silver">Silver</label>
+                    <label class="mid"><input type="radio" name="membership" value="gold">Gold</label>
+                    <label class="mid"><input type="text" name="discription">Describe your organization</label>
+                </fieldset>
+
+                <fieldset>
+                    <label><input type="hidden" name="timeStampID" id='timeStamp' /></label>
+                </fieldset>
+                <input type="submit" value="join" class="submitBtn">
+                </form>
+
+                <div class="last">
+                    <h2>Membership Levels</h2>
+                    <p>The membeship levels are below:</p>
+                    <table style="width:100%">
+                        <tr>
+                          <th>Bronze</th>
+                          <th>Silver</th>
+                          <th>Gold</th>
+                        </tr>
+                        <tr>
+                          <td>$99/year</td>
+                          <td>$199/year</td>
+                          <td>$299/year</td>
+                        </tr>
+                        <tr>
+                            <td>Full Access to All Meetings. 
+                            Event Discounts.
+                            </td>
+                            <td>Full Access to All Meetings. 
+                            Event Discounts.
+                            Special Event Discounts
+                            Training Events
+                            </td>
+                            <td>Full Access to All Meetings. 
+                            Event Discounts.
+                            Special Event Discounts
+                            Training Events
+                            Spotlight Advertising
+                            Advertising on Monthly Newsletters
+                            </td>
+                        </tr>
+                      </table>
+                </div>
+            </main>
+
+
+
+           
+        </main>
+    <footer>
+        <p>&copy; 2023 Brenda Erekson-Colorado </p>
+        <p id="lastmodified"> 
+            <?php echo date("F d, Y", getlastmod()); ? ></p>
+            <a href="scripts/getDates.js">
+            <script>
+                    document.write(" | This document is last modified on:" + " " + document.lastModified);
+            </script>           
+    </footer>
+    
+</body>
+</html>
