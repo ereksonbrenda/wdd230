@@ -29,6 +29,7 @@ if (visitCount) {
 
 window.onload = updateCount;
 
+
 var today = new Date();
 var dd = (today.getDate()).toString();
 var mm = (today.getMonth()+1).toString(); 
