@@ -1,6 +1,9 @@
 :root{
     background-color: rgba(227, 232, 229 .2);
   }
+  main{
+    margin-top:20px;
+  }
   
   .chamber{
     display:grid;
