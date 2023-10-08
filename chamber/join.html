@@ -1,4 +1,4 @@
-!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,17 +14,17 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="styles/join.css"
+    <sc    ripts src="scripts/localstorage.js"></scripts>
 
 </head>
 <body>
     <header>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
         <img class="profileimg" src="images/profileimg.webp" alt="Brenda Erekson" width="100" height="100">
-        <scripts src="scripts/localstorage.js"></scripts>
         <h1>Brenda Erekson</h1>
         <nav id="hamnav">
             <label for="hamburger">&#9776;</label>
@@ -45,36 +45,20 @@
 
             <h1>Thank you for your interest in joining the chamber. Enter all your information below and you will be all ready to go.</h1> 
             
-            <form method="get" action="thankyou.html">
+            <form method="get" action="thankyou.html" class="chamber">
         
                 <fieldset>
                     <legend>Applicant Information</legend>
                     <label class="top">First Name* <input type="text" name="fname" required></label>
                     <label class="top">Last Name* <input type="text" name="lname" required></label>
-                    <label class="top">Your Position<input type="text" name="positon" pattern="" required></label>
+                    <label class="top">Your Position* <input type="text" name="positon" pattern="" required></label>
                     <label class="top">Email* <input type="email" name="email" required></label>
-                    <label class="top">Phone Number<input type="tel" name="phone" required></label>
-                    <label class="top">Business Name <input type="text" name="business" required></label>
+                    <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+                    <label class="top">Business Name* <input type="text" name="business" required></label>
                 </fieldset>
-
-                <fieldset>
-                    <div>Membership Levels</div>
-                    <label class="mid"><input type="radio" name="membership" value="np">Non-profit no fees</label>
-                    <label class="mid" ><input type="radio" name="membership" value="bronze">Bronze</label>
-                    <label class="mid"><input type="radio" name="membership" value="silver">Silver</label>
-                    <label class="mid"><input type="radio" name="membership" value="gold">Gold</label>
-                    <label class="mid"><input type="text" name="discription">Describe your organization</label>
-                </fieldset>
-
-                <fieldset>
-                    <label><input type="hidden" name="timeStampID" id='timeStamp' /></label>
-                </fieldset>
-                <input type="submit" value="join" class="submitBtn">
-                </form>
-
-                <div class="last">
+               <div class="last">
                     <h2>Membership Levels</h2>
-                    <p>The membeship levels are below:</p>
+                    
                     <table style="width:100%">
                         <tr>
                           <th>Bronze</th>
@@ -105,13 +89,30 @@
                         </tr>
                       </table>
                 </div>
-            </main>
 
+                <fieldset>
+                  <legend>Membership Levels</legend>
+                    <label class="mid"><input type="radio" name="membership" value="np">Non-profit no fees</label>
+                    <label class="mid" ><input type="radio" name="membership" value="bronze">Bronze</label>
+                    <label class="mid"><input type="radio" name="membership" value="silver">Silver</label>
+                    <label class="mid"><input type="radio" name="membership" value="gold">Gold</label>
+                    <label class="mid"><input type="text" name="discription"> Describe your organization </label>
+                </fieldset>
+              <div>
+                
+              </div>
+     
 
+                <fieldset class="bottom">
+                    <label><input type="hidden" name="timeStampID" id='timeStamp' /></label>
+                  <div class="button">
+                    <input type="submit" value="join" class="submitBtn">
+                 </div>
+                  </fieldset
+                </form>
 
-           
-        </main>
-    <footer>
+          </main>
+<footer>
         <p>&copy; 2023 Brenda Erekson-Colorado </p>
         <p id="lastmodified"> 
             <?php echo date("F d, Y", getlastmod()); ? ></p>
