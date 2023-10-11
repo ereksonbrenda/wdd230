@@ -119,6 +119,12 @@ p{
     line-height: 1.5em;
     margin-bottom: 1em;
 }
+.firstsection{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom:25px;
+
+}
 .secondsection{
     display:grid;
     grid-template-columns: 1fr auto;
