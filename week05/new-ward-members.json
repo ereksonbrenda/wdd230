@@ -1,0 +1,23 @@
+{
+    "familyName" : "Erekson" ,
+    "date" : 2023 ,
+    "howMany" : 3 ,
+    "visited" : true ,
+    "members" : [
+        {
+          "name" : "Clinton Rock Erekson" ,
+          "gender" : "Male" ,
+          "birthDate" : "1965-29-08"
+         },
+         {
+            "name" : "Brenda Jean Erekson" ,
+            "gender" : "Female" ,
+            "birthDate" : "1968-28-05"
+         },
+         {
+            "name" : "Nathan Hawk Erekson" ,
+            "gender" : "Male" ,
+            "birthDate" : "2007-16-03"
+         }
+        ]
+    }
