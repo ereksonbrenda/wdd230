@@ -120,10 +120,14 @@ p{
     margin-bottom: 1em;
 }
 .secondsection{
+    display:grid;
+    grid-template-columns: 1fr auto;
     margin:10px;
     padding:10px;
 }
 .map{
+    display:grid;
+    grid-template-columns: 1fr auto;
     margin:10px;
     padding:10px;
 }
