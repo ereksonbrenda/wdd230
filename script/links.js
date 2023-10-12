@@ -5,12 +5,17 @@ async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
     console.log(data);
+    displayLinks(data);
   }
   
   getLinks();
 
-  async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    displayLinks(data);
+  const displayLinks = (weeks) =>{
+    weeks.weeks[0].links.foreach(url =>(console.log(url)));
   }
+
+ // async function getLinks() {
+  //  const response = await fetch(linksURL);
+   // const data = await response.json();
+   // displayLinks(data);
+  //}

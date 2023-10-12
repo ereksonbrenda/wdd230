@@ -4,12 +4,8 @@
         "week": "Week 1",
         "links": [
           {
-            "url":"",
-            "title":""
-          },
-          {
-            "url":"",
-            "title":""
+            "url":"week01/chamber-site-plan.html",
+            "title":"Site Plan"
           }
         ]
       },
@@ -17,12 +13,16 @@
         "week": "Week 2",
         "links": [
           {
-            "url":"",
-            "title":""
+            "url":"week02/design.html",
+            "title":"Design"
           },
           {
-            "url":"",
-            "title":""
+            "url":"https://codepen.io/Brerekson/pen/oNJprbd",
+            "title":"CodePen"
+          }
+          {
+            "url":"week02/bom.html",
+            "title":"Book of Mormon"
           }
         ]
       },
