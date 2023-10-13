@@ -19,7 +19,7 @@
           {
             "url":"https://codepen.io/Brerekson/pen/oNJprbd",
             "title":"CodePen"
-          }
+          },
           {
             "url":"week02/bom.html",
             "title":"Book of Mormon"
@@ -30,38 +30,64 @@
         "week": "Week 3",
         "links": [
           {
-            "url":"",
-            "title":""
+            "url":"week03/images/landscape.webp",
+            "title":"Landscape"
           },
           {
-            "url":"",
-            "title":""
+            "url":"week03/lazyload.html",
+            "title":"Lazy Loading"
+          },
+          {
+            "url":"week03/reponsive-images.html",
+            "title":"Responsive Images"
+          },
+          {
+            "url":"week03/bomcopy.html",
+            "title":"Book of Mormon"
+          },
+          {
+            "url":"chamber/discover.html",
+            "title":"Discover"
           }
+
         ]
       },
       {
         "week": "Week 4",
         "links": [
           {
-            "url":"",
-            "title":""
+            "url":"https://codepen.io/Brerekson/pen/mdazeVJ",
+            "title":"CodePen Table"
           },
           {
-            "url":"",
-            "title":""
+            "url":"week04/tablebuild.html",
+            "title":"Table Building"
+          },
+          {
+            "url":"week04/form-start/index.html",
+            "title":"Form Start"
           }
+
         ]
       },
       {
         "week": "Week 5",
         "links": [
           {
-            "url":"",
-            "title":""
+            "url":"https://codepen.io/Brerekson/pen/VwqRQVb",
+            "title":"CodePen Psuedo Classes"
           },
           {
-            "url":"",
-            "title":""
+            "url":"week05/new-ward-members.json",
+            "title":"New Ward Members"
+          },
+          {
+            "url":"week05/prophets.html",
+            "title":"Propets"
+          },
+          {
+            "url":"week05/weather.html",
+            "title":"Weather"
           }
         ]
       }

@@ -19,7 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <img class="profileimg" src="images/profileimg.webp" alt="Brenda Erekson" width="100" height="100">
-    <script src="script/localstorage.js"></script>
 
 </head>
 <body>
@@ -54,94 +53,37 @@
          </div>
         
         <h2>WDD230 Web Development Class</h2>
-        <section class="firstsection">
-            <h3 class="card">Learning Activities</h3>
-            <ul>
-                <li>
-                    <a href="week01/chamber-site-plan.html">Week01-chamber-site-plan</a>
-                </li>
+        <section class="two-col">
+            <section class="firstsection card">
+                <h3>Learning Activities</h3>
+                <div class="activity-list"></div>
                 
-                    <ul>
-                        <li>
-                            <a href="week02/design.html">Week 2 - Design</a>
-                        </li>
-                        <li>
-                            <a href="https://codepen.io/Brerekson/pen/oNJprbd" target="_blank">Week 2 - CodePen</a>
-                        </li>
-                        <li>
-                            <a href="week02/bom.html">Week 2 - BOM</a>
-                        </li>
-                    </ul>
-                
-                    <ul>
-                        <li>
-                            <a href="week03/images/landscape.webp"> Week 3 - Landscape image<landscape class="webp"></landscape></a>
-                        </li>
-                        <li>
-                            <a href="week03/lazyload.html">Week 3 - Lazy Load</a>
-                        </li>
-                        <li>    
-                            <a href="week03/reponsive-images.html">Week 3 - Responsive Images</a>
-                        </li>
-                        <li>
-                            <a href="week03/bomcopy.html">Week 3 - Book of Mormon Copy</a>
-                        </li>
-                        <li> 
-                            <a href="chamber/discover.html">Discover Page</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://codepen.io/Brerekson/pen/mdazeVJ">Week 4 - CodePen Css</a>
-                        </li>
-                        <li>
-                            <a href="week04/tablebuild.html">Table Building</a>
-                        </li>
-                        <li>
-                            <a href="week04/form-start/index.html">Form Start Page</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://codepen.io/Brerekson/pen/VwqRQVb">Week 5 - CodePen Css psuedo elements</a>
-                        </li>
-                        <li>
-                            <a href="week05/new-ward-members.json">Week 5 - New Ward Members</a>
-                        </li>
-                        <li>
-                            <a href="week05/prophets.html">Prophets</a>
-                        </li>
-                        <li>
-                            <a href="week05/weather.html">Weather</a>
-                        </li>
+            </section>
 
-                    </ul>
-                <li><a href="#">Learning Activity</a></li>
-                <li><a href="#">Learning Activity</a></li>
-            </ul>
-        </section>
-
-        <section class="secondsection">
-            <h3 class="card">Information</h3>
-            <p>Weather information will go here.</p>
+            <section class="secondsection card">
+                <h3>Information</h3>
+                <div class="weather">
+                    <img src="" class="weather-icon"/><span class="weather-text"></span>
+                </div>
+                <div>Visit Count: <span class="visits"></span></div>
+            </section>
         </section>
         <section class="map">
             <h3>Grand Junction Colorado</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d37324.09850503919!2d-108.54934819387252!3d39.05442319066425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8746d6e322e77057%3A0xcc63f451cebf7c56!2sGrand%20Junction%2C%20CO!3m2!1d39.0638705!2d-108.55064859999999!5e0!3m2!1sen!2sus!4v1695860773108!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section class="visitor">
-            <h3>Visit Counter</h3>
-            <p><span id="label">Number of Visits:</span>
-            <span class="visits"></span></p>
-        </section>
         <footer>
             <p>&copy; 2023 Brenda Erekson-Colorado </p>
             <p id="lastmodified"> 
                 <?php echo date("F d, Y", getlastmod()); ? ></p>
-                <a href="script/getDates.js">
+                <script src="script/getDates.js"></script>
                 <script>
                         document.write(" | This document is last modified on:" + " " + document.lastModified);
-                </script>           
+                </script> 
+                <script src="script/weather.js"></script>
+                <script src="script/localstorage.js"></script>
+                <script src="script/links.js"></script>
+                          
         </footer>
         
 </body>

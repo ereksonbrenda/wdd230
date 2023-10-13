@@ -36,11 +36,12 @@ p{
     text-align:center;
     color:rgb(1, 30, 34);
 }
-main{
-    display:block;
+main {
+    display: flex;
+    width: 100%;
     background-color: ivory;
-    max-width:670px;
     margin: 0 auto;
+    flex-direction: column;
 }
 .hero{
     margin: 10px auto;
@@ -105,7 +106,16 @@ main{
     text-align:center;
     color: ivory;
 }   
+.two-col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2%;
+    padding: 0 2%;
+}
 .firstsection{
+    width: 49%;
     color: rgb(5, 6, 0);
     padding: 1rem;
     margin-top: 1rem;
@@ -121,14 +131,24 @@ main{
     text-decoration: none;
     color:rgb(5, 6, 0);
 }
-.secondsection{
-    display:grid;
-    grid-template-columns:1fr 1fr;
+.secondsection {
+    width: 49%;
+    display: flex;
     color: rgb(5, 6, 0);
     padding: 1rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.weather {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
 }
 .map{
     display:grid;
