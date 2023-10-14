@@ -25,8 +25,8 @@ async function getMemberData() {
       portrait.setAttribute('src', `${member.imageLink}`);
       portrait.setAttribute('alt', `${member.name}`); 
       portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '340');
-      portrait.setAttribute('height', '440');
+      //portrait.setAttribute('width', '150');
+      portrait.setAttribute('height', '800');
       name.textContent = `${member.name}`; 
       address.textContent = `Address: ${member.address}`;
       phoneNumber.textContent = `Phone Number: ${member.phonenumber}`; 
