@@ -5,7 +5,8 @@
             "address":"755 North Ave, Grand Junction, Co7062",
             "phonenumber":"1-908-444-8888",
             "website":"https://www.americanmaidllc.com/",
-            "img":"/images/americanmaid.jpg",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/americanmaid.jpg",
+            "altText":"American Maid LLC",
             "memberlevel":"Gold Level",
             "memberlength":"2008"
         },
@@ -14,7 +15,8 @@
             "address":"222 Main St, Grand Junction, Co 81501",
             "phonenumber":"1-908-444-8888",
             "website":"https://dustybottom.com",
-            "img":"/images/dustybottoms.jpg",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/dustybottoms.jpg",
+            "altText":"Dusty Bottoms",
             "memberlevel":"Silver Level",
             "memberlength":"2010"
         },
@@ -23,7 +25,8 @@
             "address":"2233 Orchard Ave, Grand Junction, Co 81501",
             "phonenumber":"970-555-5555",
             "website":"https://zsorchard.com",
-            "img":"./images/zsorchard.jpg",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/zsorchard.jpg",
+            "altText":"Z's Orchard",
             "memberlevel":"Gold Level",
             "memberlength":"1989"
         },
@@ -32,7 +35,8 @@
             "address":"211 Main St, Grand Junction, Co 81501",
             "phonenumber":"970-222-2222",
             "website":"https://minicooper.com",
-            "img":"/images/minicooper.jpg",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/minicooper.jpg",
+            "altText":"Mini Cooper Go Fast",
             "memberlevel":"Bronze Level",
             "memberlength":"2018"
         },
@@ -41,7 +45,8 @@
             "address":"2180 I Road, Grand Junction, Co 81501",
             "phonenumber":"970-333-3333",
             "website":"https://friesianfriends.com",
-            "img":"/images/friesianfriends.jpg",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/friesianfriends.jpg",
+            "altText":"Friesian Friends Horse Farm",
             "memberlevel":"Gold Level",
             "memberlength":"2023"
         },
@@ -50,7 +55,8 @@
             "address":"9999 Dog Lane, Grand Junction, Co 81501",
             "phonenumber":"970-444-4444",
             "website":"https://airedaleterrierrescue.com",
-            "img": "/images/friesianfriends.jpg",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/friesianfriends.jpg",
+            "altText":"Airedale Terrier Rescue",
             "memberlevel":"Silver Level",
             "memberlength":"2003"
         },
@@ -59,7 +65,8 @@
             "address":"1234 RV Lane, Grand Junction, Co 81501",
             "phonenumber":"970-255-5555",
             "website":"https://happycamperrv.com",
-            "img":"/images/rv.jpg",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/rv.jpg",
+            "altText":"Happy Camper RV",
             "memberlevel":"Bronze Level",
             "memberlength":"2023"
         },
@@ -68,7 +75,8 @@
             "address":"9999 Car Lane, Grand Junction, Co 81501",
             "phonenumber":"970-666-6666",
             "website":"https://bmwofgrandjunction.com",
-            "img":"/images/bmw.png",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/bmw.png",
+            "altText":"BMW of Grand Junction",
             "memberlevel":"Gold Level",
             "memberlength":"2008"
         },
@@ -77,7 +85,8 @@
             "address":"8765 Real Ave, Grand Junction, Co 81501",
             "phonenumber":"970-777-7777",
             "website":"https://ramseyhomesellingteam.com",
-            "img":"/images/home.jpeg",
+            "imageLink":"https://github.com/ereksonbrenda/wdd230/chamber/images/home.jpeg",
+            "altText":"Ramsey Home Selling Team",
             "memberlevel":"Silver Level",
             "memberlength":"2022"
         }

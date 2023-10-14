@@ -22,7 +22,7 @@ async function getMemberData() {
       let membershipLevel = document.createElement('div');
       let membershipLength = document.createElement('div');
     
-      portrait.setAttribute('src', `${member.img}`);
+      portrait.setAttribute('src', `${member.imageLink}`);
       portrait.setAttribute('alt', `${member.name}`); 
       portrait.setAttribute('loading', 'lazy');
       portrait.setAttribute('width', '340');
