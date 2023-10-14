@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <script src="scripts/chamber.js"></script>
+    
 
    
 
@@ -107,13 +107,19 @@
    </div>
        
         <footer>
-            <p>&copy; 2023 Brenda Erekson-Colorado </p>
-            <p id="lastmodified"> 
-                <?php echo date("F d, Y", getlastmod()); ? ></p>
-                <a href="scripts/getDates.js">
-                <script>
-                        document.write(" | This document is last modified on:" + " " + document.lastModified);
-                </script>           
+          
+                <p>&copy; 2023 Brenda Erekson-Colorado </p>
+                <p id="lastmodified"> 
+                    <?php echo date("F d, Y", getlastmod()); ? ></p>
+                    
+                    <script>
+                            document.write(" | This document is last modified on:" + " " + document.lastModified);
+                    </script> 
+                    <script src="../script/weather.js"></script>
+                    <script src="../script/localstorage.js"></script>
+                    <script src="../script/links.js"></script>
+                              
+                     
         </footer>
     
 </body>

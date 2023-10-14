@@ -1,9 +1,9 @@
 const baseURL = "https://ereksonbrenda.github.io/wdd230/";
-const linksURL = "data/links.json";
-//const linksURL = "https://ereksonbrenda.github.io/wdd230/data/links.json";
+//const linksURL = "data/links.json";
+const linksURL = "https://ereksonbrenda.github.io/wdd230/data/links.json";
 const activityListDiv = document.querySelector(".activity-list");
 async function getLinks() {
-    const response = await fetch(linksURL);
+    const response = await fetch(baseURL);
     const data = await response.json();
     console.log(data);
     displayLinks(data);
