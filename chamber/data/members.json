@@ -5,7 +5,7 @@
             "address":"755 North Ave, Grand Junction, Co7062",
             "phonenumber":"1-908-444-8888",
             "website":"https://www.americanmaidllc.com/",
-            "imagurl":"https://ereksonbrenda.github.io/wdd230/chamber/images/airedale.jpeg",
+            "img":"/images/americanmaid.jpg",
             "memberlevel":"Gold Level",
             "memberlength":"2008"
         },
@@ -14,7 +14,7 @@
             "address":"222 Main St, Grand Junction, Co 81501",
             "phonenumber":"1-908-444-8888",
             "website":"https://dustybottom.com",
-            "imagurl":"https://ereksonbrenda.github.io/wdd230/chamber/images/dustybottoms.jpg",
+            "img":"/images/dustybottoms.jpg",
             "memberlevel":"Silver Level",
             "memberlength":"2010"
         },
@@ -22,8 +22,8 @@
             "name":"Z's Orchard",
             "address":"2233 Orchard Ave, Grand Junction, Co 81501",
             "phonenumber":"970-555-5555",
-            "website":"https://ereksonbrenda.github.io/wdd230/chamber/z'sorchard.com",
-            "imagurl":"./images/zsorchard.jpg",
+            "website":"https://zsorchard.com",
+            "img":"./images/zsorchard.jpg",
             "memberlevel":"Gold Level",
             "memberlength":"1989"
         },
@@ -32,7 +32,7 @@
             "address":"211 Main St, Grand Junction, Co 81501",
             "phonenumber":"970-222-2222",
             "website":"https://minicooper.com",
-            "imagurl":"https://ereksonbrenda.github.io/wdd230/chamber/images/minicooper.jpg",
+            "img":"/images/minicooper.jpg",
             "memberlevel":"Bronze Level",
             "memberlength":"2018"
         },
@@ -41,7 +41,7 @@
             "address":"2180 I Road, Grand Junction, Co 81501",
             "phonenumber":"970-333-3333",
             "website":"https://friesianfriends.com",
-            "imagurl":"https://ereksonbrenda.github.io/wdd230/chamber/images/friesianfriends.jpg",
+            "img":"/images/friesianfriends.jpg",
             "memberlevel":"Gold Level",
             "memberlength":"2023"
         },
@@ -50,7 +50,7 @@
             "address":"9999 Dog Lane, Grand Junction, Co 81501",
             "phonenumber":"970-444-4444",
             "website":"https://airedaleterrierrescue.com",
-            "imagurl": "https://ereksonbrenda.github.io/wdd230/chamber/images/friesianfriends.jpg",
+            "img": "/images/friesianfriends.jpg",
             "memberlevel":"Silver Level",
             "memberlength":"2003"
         },
@@ -59,7 +59,7 @@
             "address":"1234 RV Lane, Grand Junction, Co 81501",
             "phonenumber":"970-255-5555",
             "website":"https://happycamperrv.com",
-            "imagurl":"https://ereksonbrenda.github.io/wdd230/chamber/images/rv.jpg",
+            "img":"/images/rv.jpg",
             "memberlevel":"Bronze Level",
             "memberlength":"2023"
         },
@@ -68,16 +68,16 @@
             "address":"9999 Car Lane, Grand Junction, Co 81501",
             "phonenumber":"970-666-6666",
             "website":"https://bmwofgrandjunction.com",
-            "imagurl":"https://ereksonbrenda.github.io/wdd230/chamber/images/bmw.png",
+            "img":"/images/bmw.png",
             "memberlevel":"Gold Level",
             "memberlength":"2008"
         },
         {
             "name":"Ramsey Home Selling Team",
-            "address":"8765 Real Estate Lane, Grand Junction, Co 81501",
+            "address":"8765 Real Ave, Grand Junction, Co 81501",
             "phonenumber":"970-777-7777",
             "website":"https://ramseyhomesellingteam.com",
-            "imagurl":"https://ereksonbrenda.github.io/wdd230/chamber/images/home.jpeg",
+            "img":"/images/home.jpeg",
             "memberlevel":"Silver Level",
             "memberlength":"2022"
         }
