@@ -16,11 +16,17 @@
     padding:10px;
     margin:10px;
   }
-  
+
+  h3{
+    color: black;
+    font-size: 1.5rem;
+    margin:10px;
+    
+  }
   h1, h2, h3, h4{
     color: darkblue;
   }
-  
+
   .top{
     display:block;
     padding:.5rem;
@@ -55,10 +61,10 @@
     position: relative;
   }
   .submitBtn{
-    background-color: yellow;
-    border: 2px solid green;
+    background-color: rgb(141, 248, 105);
+    border: 2px solid rgb(0, 33, 0);
     border-radius:10px;
-    color: green;
+    color: rgb(0, 8, 0);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -73,7 +79,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  .submitBtn:hover {background-color: #e7e7e7;}
+  .submitBtn:hover {background-color: #f6a2a2;}
   
   .last{
     margin:10px;
@@ -83,4 +89,16 @@
   table{
     display:grid;
     padding:20px;
+  }
+  th{
+    padding:10px;
+    border:2px solid grey;
+    background-color: rgb(246, 246, 202);
+    font-weight:bold;
+  }
+  td{
+    padding:10px;
+    border:2px solid grey;
+    background-color: rgb(240, 240, 240);
+    font-weight: 400;
   }
