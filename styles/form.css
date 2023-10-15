@@ -5,6 +5,31 @@
     --yes: green;
 
 }
+legend{
+    color:var(--user);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    padding: 0 0 1rem 0;
+    border-bottom: none;
+}
+
+
+.user{
+    color:var(--user);
+    font-size: 3rem;
+    font-weight: bold;
+    
+    
+}
+input{
+    font-size: 1.5rem;
+    color:var(--user);
+    margin: 10px;
+    width: 98%;
+    max-width: 50rem;
+}
+
 h1{
     color:var(--user);
 }  
@@ -16,23 +41,37 @@ h1{
 
 .form {
     margin: 2rem 0;
-    border: 1px solid blue; 
+    border: 1px solid rgb(243, 71, 9); 
     border-radius: 10px;
     padding: .5rem 2%;
 }
-
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+    margin: 25px;
+    border: 1px solid black;
+    max-width: 75%;
+    padding: 50px;
+}
+.rated{
+    margin: 25px;
+    padding: 50px;
+    font-size: 1.5rem;
+    color:#555;
+    max-width: 75%;
+    border: 1px  solid black;
+}
 
 form label.user{
     display:block;
     color:black;
     padding:5px;
-    border: solid 4px black;
+    border: solid 2px black;
+    margin:5px;
     border-radius:4px;
-    padding-top: 0 .5rem;
-    font-size: .8rem;
+    font-size: 1.5rem;
     color:#555;
     width: 100%;
-    max-width: 20rem;
+    max-width: 50rem;
 
 }
 .bottom{
@@ -51,14 +90,17 @@ form input.submitBtn{
     padding: .75rem 1.5rem;
     background-color: var(--required);
     color: var(--background-color);
+    font-size: 30px;
+    font-weight: bold;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 20rem;
+    max-width: 30rem;
 
 }
 
 form label.user :required{
     border-left: solid 6px var(--required);
+  
 }
 
 form label.user :required:valid{
@@ -67,19 +109,20 @@ form label.user :required:valid{
 
     
 #r {
-	width: 180px;
+	width: 400px;
+    height:50px;
 	margin-bottom: 0;
 }
 
 #rangevalue {
-	font-size: 2rem;
-	color: navy;
+	font-size: 1rem;
+	color: black;
 }
 
 #rangevalues {
 	display: flex;
 	margin: 0 0 0 25px;
-	width: 200px;
+	width: 400px;
 }
 
 #rangevalues option {

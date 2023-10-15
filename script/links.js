@@ -5,7 +5,7 @@ const activityListDiv = document.querySelector(".activity-list");
 async function getLinks() {
     const response = await fetch(baseURL);
     const data = await response.json();
-    //console.log(data);
+    console.log(data);
     displayLinks(data);
   }
   

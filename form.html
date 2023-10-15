@@ -45,38 +45,35 @@
     <main>
         <form method="get" action="record.html">
             <fieldset id="form">
-                <legend class="top">Username</legend>
-                    <label class="user">Name* 
+                <legend class="top"> Join Now! </legend>
+                    <label class="user">Name*  
                         <input type="text" id="username" name="name" required>
                     </label>
                     <label class="user">Password*
                         <input type="password" id="password" name="password" pattern="[A-Za-z]{8}" placeholder="must be 8 characters long" required>
                     </label>
-                    <label class="user">Re-type Password*> 
+                    <label class="user">Re-type Password* 
                         <input type="password2" id="password2" name="password2">
                     </label>
                     <label class="user">Email Address
                         <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="Please use your school email address">
                     </label>    
             </fieldset>
-            <fieldset id="rate">
-                <ledgend class="bottom">Page Rating</ledgend>
-                <div id="rangevalue">0</div>
-                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
-                <datalist id="rangevalues">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
-            </fieldset>
+            
+                   
+            <div class="rated">  
+                <legend class="top">
+                    <label for="rating"></label>
+                    
+                    <h2>Rate your experience</h2>
+                    <p>How would you rate your experience with this form?</p>
+                    <p>0 = Terrible, 10 = Excellent</p>
+
+                    <input type="range" id="rating" name="rating" min="0" max="10" step="1" value="5" oninput="ratingOutput.value = rating.value">
+                    <output name="ratingOutput" id="ratingOutput" for="rating">5</output>  
+               </legend>
+            </div>
+
             <input type="submit" value="Finish Here" class="submitBtn">
         </form>
 
