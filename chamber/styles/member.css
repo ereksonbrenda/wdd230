@@ -48,6 +48,10 @@ section {
     /* flex-wrap: wrap; */
     /* align-content: center; */
 }
+
+.member-container .grid section{
+    max-width:560px;
+}
 h3{
     font-size: 1.5rem;
     color: whitesmoke;
@@ -125,6 +129,7 @@ h2 {
     align-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+   
     /* justify-content: flex-start; */
     /* align-items: stretch; */
 }
