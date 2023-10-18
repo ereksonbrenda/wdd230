@@ -4,6 +4,18 @@
         "week": "Week 1",
         "links": [
           {
+            "url":"week01/holygrail.html",
+            "title":"Holy Grail"
+          },
+          {
+            "url":"https://codepen.io/Brerekson/pen/ExGqYMO?editors=1010",
+            "title":"Applied Javascript CodePen"
+          },
+          {
+            "url":"week01/media-query.html",
+            "title":"Media Query Examples"
+          },
+          {
             "url":"week01/chamber-site-plan.html",
             "title":"Site Plan"
           }
