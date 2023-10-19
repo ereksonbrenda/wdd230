@@ -2,7 +2,14 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-button.addEventListener('click', function () {
+let chaptersArray = getChaptersList() || [];
+
+chaptersArray.forEach(chapter => {
+  displayList(chapter);
+}
+);
+
+button.addEventListener('click', () => {
     if (input.value !== '') 
     {   displayList(input.value);
         chaptersArray.push(input.value);
@@ -13,12 +20,6 @@ button.addEventListener('click', function () {
 
     });
 
-let chaptersArray = getChaptersList() || [];
-chaptersArray.array.forEach(chapter => {
-    displayList(chapter);
-
-    
-});
 function displayList(item) {
   let li = document.createElement('li');
   let deletebutton = document.createElement('button');
@@ -34,6 +35,7 @@ function displayList(item) {
   });
   console.log('I like to copy code instead of typing it out myself and trying to understand it.');
 }
+
 function setChapterList() {
     localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
   }

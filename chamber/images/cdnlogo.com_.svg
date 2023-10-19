@@ -1,0 +1,10 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <g id="svg_6">
+   <ellipse stroke-dasharray="5,2,2,2,2,2" ry="48.5" rx="94.5" id="svg_3" cy="114.5" cx="276.5" stroke="#000" fill="#9ACEE6"/>
+   <text stroke-dasharray="5,2,2,2,2,2" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_1" y="106" x="205" stroke-width="0" stroke="#9ACEE6" fill="#000">Grand Junction</text>
+   <text stroke-dasharray="5,2,2,2,2,2" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_2" y="136" x="231" stroke-width="0" stroke="#9ACEE6" fill="#000">Colorado</text>
+  </g>
+ </g>
+</svg>

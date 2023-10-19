@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:description" content="Grand Junction Chamber of Commerce">
+    <meta name="description" content="Grand Junction Chamber of Commerce">
+    <meta viewport="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Grand Junction Chamber of Commerce" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ereksonbrenda.github.io/wdd230" />
     <meta property="og:image" content="https://www.gjcity.org/ImageRepository/Document?documentID=96" />
+    
     <title>Grand Junction Chamber of Commerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -15,7 +18,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="script/chamber.js"></script>
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -24,55 +27,36 @@
 </head>
 
     <header>
+       <h1 class="title">Grand Junction Chamber of Commerce</h1>
+       
+        <img class="hero" src="images/hero.jpeg" alt="Grand Junction Downtown area">
+        <div class="join">
+            <a href="join.html" class="button" target="blank">Join Now!</a>
+        </div>
+
         <nav id="hamnav">
             <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger"/>
- 
-  <!-- (C) MENU ITEMS -->
          <div id="hamitems">
             <a href="../index.html">Home</a>
             <a href="join.html">Join Now!</a>
          </div>
+
         </nav>
     </header>
-         
-                <h1 class="title">Grand Junction Chamber of Commerce</h1>
-                <img class="hero" src="images/hero.jpeg" alt="Grand Junction Downtown area">
-                <div class="join">
-                   
-                <a href="join.html" class="button" target="blank">Join Now!</a>
-            
-                </div>
-                
-           
-    
+             
 <body>
     <main>
          <h2>Current Events</h2>
 
     <section class="events">
+        
         <div class="card">
-            <img src="images/mountainbiking.jpeg" alt="Outdoor Activities" loading="lazy" width="600" height="600">
+            <img src="images/ftf.jpeg" alt="fat tire Festival" loading="lazy" width="600" height="600">
             <div class="container">
               <h4><b>Mountian Biking</b></h4>
-              <p>Most of the year</p>
-              <p>More info here/Events/Fat Tire Festival</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/mountainbiking.jpeg" alt="Outdoor Activities" style="width:100%" loading="lazy" width="600" height="600">
-            <div class="container">
-              <h4><b>Mountian Biking</b></h4>
-              <p>Most of the year</p>
-              <p>More info here/Events/Fat Tire Festival</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/mountainbiking.jpeg" alt="Outdoor Activities" loading="lazy" width="600" height="600">
-            <div class="container">
-              <h4><b>Mountian Biking</b></h4>
-              <p>Most of the year</p>
-              <p>More info here/Events/Fat Tire Festival</p>
+              <p>Once a year Fruita will host a weekend mountainbiking party.</p>
+              <p>Vendors from all around the country come to display their items.</p>
             </div>
         </div>
     </section>
@@ -82,72 +66,63 @@
     <section class="weather">
        <div class="card">
             <img src="images/weather.jpeg" alt="Weather in Grand Junction" style="width:100%">
-        
-            <div class="container">
-                <h4>Current Weather in Grand Junction</h4>
-                <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
-                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/weather.jpeg" alt="Weather in Grand Junction" style="width:100%">
-        
-            <div class="container">
-                <h4>Current Weather in Grand Junction</h4>
-                <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
-                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/weather.jpeg" alt="Weather in Grand Junction" style="width:100%">
-        
-            <div class="container">
-                <h4>Current Weather in Grand Junction</h4>
-                <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
-                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
+            <div class="weather">
+                <h4>The Current Weather in Grand Junction, Colorado:</h4>
+                <img src="" class="weather-icon"/><span class="weather-text"></span>
             </div>
         </div>
        
     </section>
 
-        <h2>Spotlights</h2>
+        <h2>Community Spotlights</h2>
 
     <section class="spotlight">
         <div class="card">
-            <img src="images/mustangs.jpeg" alt="mustangs" style="width:100%">
+            <img src="images/americanmaidllc.jpeg" alt="american maid" style="width:100%">
             <div class="container">
-              <h4><b>Friends of the Mustangs</b></h4>
-              <p>A group of citizens that take care of the wild horse population.</p>
+              <h4><b>American Maid LLC</b></h4>
+              <p>American Maid is a Gold Member of the Chamber and they have donated many hours of service.</p>
             </div>
           </div>
         <div class="card">
-            <img src="images/peaches.jpeg" alt="peaches" style="width:100%">
+            <img src="images/bmw.png" alt="bmw" style="width:100%">
             <div class="container">
-                <h4><b>Peaches</b></h4>
-                <p>More info here/Local Business/Peaches</p>
+                <h4><b>BMW of Western Colorado</b></h4>
+                <p>We are so proud to have BMW of Western Colorado as a memeber of the Chamber. They have donated to local charities. They are a Gold member.</p>
             </div>
         </div>
         <div class="card">
-            <img src="images/grandjct-temple.jpg" alt="temple" style="width:100%">
+            <img src="images/z's orchard.jpeg" alt="orchard" style="width:100%">
             <div class="container">
-                <h4><b>Grand Junction Temple</b></h4>
-                <p>More info here/Local Business/temple</p>
+                <h4><b>Z's Orchard</b></h4>
+                <p>For many years, Z's Orchard has donated peaches for canning to the local food bank. Many community members benefit from the cannery. They are a Silver member.</p>
             </div>
         </div>
     </section>
     </main>
-    <script>
-        document.write("This document is lastly modified on" + " " +document.lastModified);
-     </script>
+    
 </body>
 
 <footer>
-    <p>&copy; 2023 Brenda Erekson | wdd230 | </p>
+    <section class="footnotes">
+    <div class="inform">
+        <p>Grand Junction Chamber of Commerce</p>
+        <p>360 Grand Ave</p>
+        <p>Grand Junction, CO 81501</p>
+        <p>970-242-3214</p>
+    </div>
+    <div class="more">
+        <p>More Info</p>
+        <p>Join Now!</p>
+        <p>Events</p>
+        <p>Weather</p>
+    </div>
+    </section>
+    <p>&copy; 2023 Brenda J Erekson | wdd230 project for my web design class  | 
+        <script>
+        document.write("This document is lastly modified on" + " " +document.lastModified);
+        </script></p>
+     <script src="script/chamber.js"></script>
+     
 </footer>
 </html>

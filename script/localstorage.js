@@ -8,3 +8,18 @@ if(numVisits == 0) {
 numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
+
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("🕶️")) {
+		main.style.background = "var(--dark)";
+		main.style.color = "var(--light)";
+		modeButton.textContent = "🔆";
+	} else {
+		main.style.background = "var(--light)";
+		main.style.color = "var(--dark)";
+		modeButton.textContent = "🕶️";
+	}
+});

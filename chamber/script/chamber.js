@@ -1,48 +1,35 @@
-var counterContainer;
-var resetButton;
-var visitCount;
-var welcomeStatement ;
 
-function resetCount(){
-    visitCount = 1;
-    localStorage.setItem("page_view", 1);
-    counterContainer.innerHTML = welcomeStatement;
-}
-function updateCount(){
-    counterContainer = document.querySelector("span.visit-count");
-    resetButton = document.querySelector("#reset");
-    visitCount = localStorage.getItem("page_view");
-    console.log(visitCount);
-    welcomeStatement = "Welcome! Let us know if you have any questions.";
+// Path: chamber/script/chamber.js
 
-if (visitCount) {
-    visitCount = Number(visitCount) + 1;
-    localStorage.setItem("page_view", visitCount);
-    } else {
-        resetCount();
+const weatherText = document.querySelector(".weather-text");
+const weatherIcon = document.querySelector(".weather-icon");
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=39.11&lon=-108.63&appid=b0c58930027168209002a9060ab2561c&units=imperial";
+
+
+async function apiFetch(){
+    try {
+        const response = await fetch(url);
+        if (response.ok){
+            const data = await response.json();
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
     }
-    counterContainer.innerHTML = visitCount;
+}
+apiFetch();
+function displayResults(data){
+    //currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    //currentTemp.innerHTML = data.main.temp + "&deg;F";
+    //const iconsrc = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconsrc = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+    const desc = data.main.temp + "&deg;F - " + data.weather[0].description;
+    console.log(iconsrc);
+    console.log(desc);
+    weatherIcon.setAttribute("src", iconsrc);
+    weatherIcon.setAttribute("alt", desc);
 
-    // Adding onClick event listener
-    resetButton.addEventListener("click", resetCount() );
-};
-
-window.onload = updateCount;
-
-
-var today = new Date();
-var dd = (today.getDate()).toString();
-var mm = (today.getMonth()+1).toString(); 
-var yy = (today.getFullYear()-2000).toString();
-if(dd<10) 
-{
-    dd='0'+dd;
-} 
-if(mm<10) 
-{
-    mm='0'+mm;
-} 
-today = yy+mm+dd;
-
-
-document.getElementById('timeStamp').value= today ; 
+    weatherText.innerHTML = desc;
+}

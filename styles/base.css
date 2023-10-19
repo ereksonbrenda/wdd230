@@ -20,6 +20,10 @@ highlight #f9f9b3 yellowish*/
     
 
 }
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
 
 body {
     color: var(--light);
@@ -68,12 +72,25 @@ p{
     text-align:center;
     
 }
-header{
+header{ 
+    align-content: center;
+    align-items: center;
     color: var(--light);
     background-color: var(--medium);
-    
-   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+#mode{
+    display:flex;
+    justify-content: flex-end;
+    margin: 1rem;
+
+}
+
+   
 .profileimg{
     border: 3px solid var(--medium);    
     border-radius: 50%;
@@ -85,7 +102,7 @@ header{
     width: 20%;   
 }
 main {
-    background-color: var(--medium);
+    background-color: var(--light);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -172,16 +189,15 @@ main {
 
 .herolabel {
     background: linear-gradient(var(--medium),var(--dark));
-	border: 1px solid var(--dark);
+    border: 1px solid var(--dark);
     border-radius: 4px;
     box-shadow: 0 0 3rem var(--dark);
-    left: 30px;
-    opacity: 0.75;
-    padding: 1.5rem;
+    right: 5px;
+    opacity: .7;
+    padding: 0.5rem;
     position: absolute;
-	top: 30px;	
+    bottom: 5px;
 }
-
 .herolabel p {
     font-family: 'Bree Serif', serif;
 	font-size: 1.4rem;
