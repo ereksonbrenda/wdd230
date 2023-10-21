@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/member.css">
+    <link rel="stylesheet" href="styles/join.css">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +41,8 @@
             <input type="checkbox" id="hamburger"/>
          <div id="hamitems">
             <a href="../index.html">Home</a>
+            <a href="index.html">Chamber Home</a>
+            <a href="discover.html">Discover</a>
             <a href="join.html">Join Now!</a>
          </div>
 
@@ -68,7 +72,7 @@
             <img src="images/weather.jpeg" alt="Weather in Grand Junction" style="width:100%">
             <div class="weather">
                 <h4>The Current Weather in Grand Junction, Colorado:</h4>
-                <img src="" class="weather-icon"/><span class="weather-text"></span>
+                <img src="https://api.openweathermap.org/data/2.5/weather?lat=39.11&lon=-108.63&appid=b0c58930027168209002a9060ab2561c&units=imperial" class="weather-icon"/><span class="weather-text"></span>
             </div>
         </div>
        
@@ -123,6 +127,7 @@
         document.write("This document is lastly modified on" + " " +document.lastModified);
         </script></p>
      <script src="script/chamber.js"></script>
+     <script src="script/members.js"></script>
      
 </footer>
 </html>
