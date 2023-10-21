@@ -48,7 +48,7 @@
             <picture>
                 <source media="(max-width: 960px)" srcset="images/hero-large.webp">
                 <source media="(max-width: 400px)" srcset="images/hero-small.webp">
-                <img src="week03/images/hero-large.webp" alt="hero image" width="1500px">
+                <img src="week03/images/hero-large.webp" alt="hero image" width="1500">
             </picture>
             <div class="herolabel">
                 <p>Washington D.C. Temple</p>
@@ -68,7 +68,7 @@
                 <h3>Information</h3>
                 <div class="weather">
                     <h4>Grand Junction, Colorado:</h4>
-                    <img src="" class="weather-icon"/><span class="weather-text"></span>
+                    <img src="" class="weather-icon" alt="weather-icon"/><span class="weather-text"></span>
                 </div>
                 <div class="visit">Visit Count: <span class="visits"></span></div>
             </section>
@@ -78,12 +78,13 @@
             <h3>Grand Junction Colorado</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d37324.09850503919!2d-108.54934819387252!3d39.05442319066425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8746d6e322e77057%3A0xcc63f451cebf7c56!2sGrand%20Junction%2C%20CO!3m2!1d39.0638705!2d-108.55064859999999!5e0!3m2!1sen!2sus!4v1695860773108!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        </main>
         
         <footer>
 
                 <p>&copy; 2023 Brenda Erekson ||  Colorado |</p>
                 <p id="lastmodified"> 
-                <?php echo date("F d, Y", getlastmod()); ? ></p>
+                <php echo date("F d, Y", getlastmod()); ? ></p>
                 <script src="script/getDates.js"></script>
                 <script src="script/weather.js"></script>
                 <script src="script/localstorage.js"></script>
