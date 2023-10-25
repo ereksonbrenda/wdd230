@@ -1,4 +1,4 @@
-Header { 
+header { 
     text-align: center; 
     font-size: 1rem; 
     color:rgb(6, 6, 238);
@@ -36,6 +36,16 @@ section {
     margin: 10px;
     width: 60%;
 }
+@media screen and (max-width: 768px) {
+    #cards {
+        width: 100%;
+    }
+    section {
+        display:block;
+        width: 100%;
+    }
+    
+}
 
 .member-container {
     display: flex;
@@ -69,7 +79,8 @@ h2 {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: rgb(3, 71, 93);
+    background-color: var(--dark);
+    border-radius: 1rem;
     text-align: center;
     width: 100%;
     display: flex;
@@ -103,9 +114,14 @@ h2 {
 }
 
 .grid img {
-	border: 2px solid #999494;
-    border-radius: 8px 8px 0 0; 
-	box-shadow: 0 0 5px #f8baba;
+    border: 2px solid #999494;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f49999;
+    padding:0;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    
 }
 
 .grid section > * {
@@ -116,21 +132,18 @@ h2 {
 	font-family: "Caveat", cursive;
 }*/
 
-.list {
+.list #cards {
 	display: flex;
 	flex-direction: column;
 }
 
 .list section {
-    display: inline-flex;
-    grid-template-columns: 2fr 1fr 1fr;
+    display:flex;
+    
     margin: 0;
     padding: 0.5rem;
     align-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-   
-    /* justify-content: flex-start; */
+    flex-direction: column;
     /* align-items: stretch; */
 }
 
@@ -170,6 +183,6 @@ section a {
 }
 
 img {
-	height: 5em;
+	
 	max-width: 100%;
 }

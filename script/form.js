@@ -4,7 +4,6 @@ const message = document.querySelector("#form");
 
 pw2.addEventListener("focusout", checkSame);
 
-// This should be refactored.
 function checkSame() {
 	if (pw1.value !== pw2.value) {
 		message.textContent = "❗Key Phrases DO NOT MATCH!";

@@ -1,8 +1,13 @@
 :root{
     background-color: rgba(227, 232, 229 .2);
   }
+  body{
+    background-color: var(--medium);
+  }
   main{
+    background-color: var(--medium);
     margin-top:20px;
+
   }
   
   .chamber{
@@ -18,13 +23,13 @@
   }
 
   h3{
-    color: black;
+    color: var(--light);
     font-size: 1.5rem;
     margin:10px;
     
   }
   h1, h2, h3, h4{
-    color: darkblue;
+    color: var(--light);
   }
 
   .top{
@@ -42,12 +47,12 @@
   legend{
     margin-left:5px;
     margin-right:5px;
-    color:black;
+    color: var(--light);
     font-size: 1.5rem;
   }
   
   label{
-    color:rgba(42, 51, 44);
+    color:var(--light);
     font-size:.8rem;
   }
   .bottom{

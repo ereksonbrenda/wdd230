@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Brenda Erekson wdd230" />
+    <meta property="og:description" content="Grand Junction Chamber of Commerce">
+    <meta name="description" content="Grand Junction Chamber of Commerce">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <meta author="Brenda Erekson">
+    <meta property="og:website" content="https://ereksonbrenda.github.io/wdd230">
+    <meta property="og:title" content="Grand Junction Chamber of Commerce" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ereksonbrenda.github.io/wdd230" />
     <meta property="og:image" content="https://www.gjcity.org/ImageRepository/Document?documentID=96" />
-    <title>Brenda Erekson - wdd230 - Web Frontend Development</title>
-    <meta name="author" content="Brenda Erekson's WDD230 - Web Frontend Development class/course assignment portal">
-    <link rel="icon" href="favicon.ico"> 
-    <link rel="stylesheet" href="styles/join.css">
+    
+    <title>Grand Junction Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-   
-    <script src="scripts/localstorage.js"></script>
-
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="favicon.ico">
 </head>
 
     <header>
+       <h1 class="title">Grand Junction Chamber of Commerce</h1>
        
+        <img class="hero" src="images/hero.jpeg" alt="Grand Junction Downtown area">
+        <div class="join">
+            <a href="join.html" class="button" target="blank">Join Now!</a>
+        </div>
+
         <nav id="hamnav">
             <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger"/>
- 
-  <!-- (C) MENU ITEMS -->
          <div id="hamitems">
             <a href="../index.html">Home</a>
-            <a href="chamber/index.html">Chamber</a>
-            <a href="./week01/chamber-site-plan.html">chamber-site-plan</a>
-            <a href="#">Form</a>
+            <a href="index.html">Chamber Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join Now!</a>
          </div>
-        
+
         </nav>
     </header>
+    <body>
     
         <main>
 
@@ -113,13 +122,28 @@
                 </form>
 
           </main>
-<footer>
-        <p>&copy; 2023 Brenda Erekson-Colorado </p>
-        <p id="lastmodified"> 
-            <?php echo date("F d, Y", getlastmod()); ? ></p>
-            <a href="script/getDates.js">
-            <script>
-                    document.write(" | This document is last modified on:" + " " + document.lastModified);
-            </script>           
-    </footer>
+          <footer>
+            <section class="footnotes">
+            <div class="inform">
+                <p>Grand Junction Chamber of Commerce</p>
+                <p>360 Grand Ave</p>
+                <p>Grand Junction, CO 81501</p>
+                <p>970-242-3214</p>
+            </div>
+            <div class="more">
+                <p>More Info</p>
+                <p>Join Now!</p>
+                <p>Events</p>
+                <p>Weather</p>
+            </div>
+            </section>
+            <p>&copy; 2023 Brenda J Erekson | wdd230 project for my web design class  | 
+                <script>
+                document.write("This document is lastly modified on" + " " +document.lastModified);
+                </script></p>
+             <script src="script/chamber.js"></script>
+             <script src="script/members.js"></script>
+             
+        </footer>
+</body>
 </html>

@@ -33,3 +33,18 @@ function displayResults(data){
 
     weatherText.innerHTML = desc;
 }
+
+
+document.querySelector(".banner").addEventListener("click", () => {
+    document.querySelector(".banner").style.display = "none";
+}   );
+
+var d = new Date();
+var n = d.getDay();
+console.log(n);
+if (n == 1||n == 2||n == 3) {
+    document.querySelector(".banner").style.display = "flex";
+}
+else{   
+    document.querySelector(".banner").style.display = "none";
+}

@@ -36,6 +36,68 @@ header{
     width:100%;
    
 }
+.menu{
+    background-color:var(--dark);
+    
+}
+
+.weather-forcast{
+    align-content: center;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.5em;
+    justify-content: space-evenly;   
+}
+.weather-forcast-item{
+    border: 2px solid var(--dark);
+    border-radius: 1rem;
+    box-shadow: var(--dark) 0.2rem 0.2rem 0.2rem 0.2rem;
+    color: var(--dark);
+    padding: 1rem;
+    
+}
+.banner{
+    background: var(--light); 
+    display:flex;
+    align-items: center;
+    margin:10px;
+}
+.banner__content{
+    padding: 6px;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.banner__text{
+    flex-grow: 1;
+    color: var(--dark);
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;	
+}
+.banner__close{
+    color:var(--light);
+    background: none;
+    border:none;
+    cursor: pointer;
+    	
+}
+.banner__text,
+.banner__close>span{
+    color: var(--dark);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 /* [ON BIG SCREENS] */
 /* (A) WRAPPER */
 #hamnav {
@@ -110,6 +172,14 @@ header{
     bottom: 5px;
     right:2px;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 
 h1{
     color:var(--light);
@@ -145,12 +215,7 @@ p{
     line-height: 1.5em;
     margin-bottom: 1em;
 }
-.weather{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+
 .weather{
     align-content: center;
     align-items:center;
@@ -237,12 +302,13 @@ p{
   }
   
 img {
+    animation: fadeIn 3s;
     border-radius: 5px 5px 0 0; 
-    animation: fadeIn 3s;
-    border-radius: 5px 5px 0 0;
-    animation: fadeIn 3s;
+    height:auto;
     padding: 10px;
-    width: -webkit-fill-available;
+    width:100%;
+
+    
   }
 img:hover{
     box-shadow: 0 8px 16px 0 var(--dark); 
@@ -369,4 +435,8 @@ footer{
     justify-content: space-evenly;
     align-content: flex-start;
 }
-
+/*thank you page*/
+.thanks{
+    margin:20px;
+    padding:50px;
+}
